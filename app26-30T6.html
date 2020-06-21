@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS 2ND ASSIGNMENT FROM CHAPTER 21 TO 25</title>
+ <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+   <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<div class="jumbotron text-center">
+  <h1>JS 2ND ASSIGNMENT FROM CHAPTER 26 TO 30</h1>
+  <p>This assignment includes from chapter 26 to 30!</p> 
+</div>
+  
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <h3>TASK 6</h3>
+      <p> 6. Write a program that shows a random number between 1 and 100 in your browser.</p>
+    
+        <button class="btn" onclick="MyFunction()">Open</button>
+       <p id="random"></p>
+      
+      
+    </div>
+  </div>
+</div>
+
+<script>
+function MyFunction(){
+  let random = Math.random();
+  let value = Math.floor((random * 100) + 1);
+      document.getElementById("random").innerHTML = "random number between 1 and 100: "+value;
+    }
+      
+      
+</script>
+
+</body>
+
+</html>
+

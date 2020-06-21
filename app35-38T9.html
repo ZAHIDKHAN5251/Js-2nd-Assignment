@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JS 2ND ASSIGNMENT FROM CHAPTER 21 TO 25</title>
+ <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+   <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<div class="jumbotron text-center">
+  <h1>JS 2ND ASSIGNMENT FROM CHAPTER 34 TO 38</h1>
+  <p>This assignment includes from chapter 34 to 38!</p> 
+</div>
+  
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <h3>TASK 9</h3>
+      <p> 9. Write a function that calculates the area of a rectangle.  A = width * height  </p>
+    
+        <button class="btn" onclick="MyFunction()">Open</button>
+       <p id="areaoftriangle"></p>
+        <p id="perameteroftriangle"></p>
+      
+      
+    </div>
+  </div>
+</div>
+
+<script>
+function MyFunction(){
+        var width = prompt("Enter value of width :");
+        var height = prompt("Enter value of height :");
+        var area = (parseInt(width) * parseInt(height))*2;
+        var perameter = (parseInt(width)*2) + (parseInt(height)*2); 
+        document.getElementById("areaoftriangle").innerHTML = "the area of triangle is  : " +area;
+        document.getElementById("perameteroftriangle").innerHTML = "the perameters of triangle is  : " +perameter;
+        
+        }
+      
+      
+</script>
+
+</body>
+
+</html>
+

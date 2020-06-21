@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS 2ND ASSIGNMENT FROM CHAPTER 21 TO 25</title>
+ <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+   <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<div class="jumbotron text-center">
+  <h1>JS 2ND ASSIGNMENT FROM CHAPTER 31 TO 34</h1>
+  <p>This assignment includes from chapter 31 to 34!</p> 
+</div>
+  
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <h3>TASK 6</h3>
+      <p> 6. Write a program that determines the minutes since midnight, Jan. 1, 1970 and assigns it to a variable that hasn't been declared beforehand. Use any variable you like to represent the Date object..</p>
+    
+        <button class="btn" onclick="MyFunction()">Open</button>
+       <p id="month"></p>
+       <p id="sec"></p>
+       <p id="mint"></p>
+      
+      
+    </div>
+  </div>
+</div>
+
+<script>
+function MyFunction(){
+   let date = new Date();
+   let getMilliseconds = date.getTime();
+  let getMinutes = getMilliseconds/(59*59);
+ 
+  document.getElementById("month").innerHTML = " <h3><br> Current date</h3> :" +date;
+  document.getElementById("sec").innerHTML = " <h3>Elapsed minutes since january 1, 1970:</h3> " +getMilliseconds;
+  document.getElementById("mint").innerHTML = " <h3>Elapsed seconds since january 1, 1970:</h3> " +getMinutes;
+ 
+}
+        
+    
+      
+      
+</script>
+
+</body>
+
+</html>
+

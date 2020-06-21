@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JS 2ND ASSIGNMENT FROM CHAPTER 21 TO 25</title>
+ <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+   <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<div class="jumbotron text-center">
+  <h1>JS 2ND ASSIGNMENT FROM CHAPTER 34 TO 38</h1>
+  <p>This assignment includes from chapter 34 to 38!</p> 
+</div>
+  
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <h3>TASK 12</h3>
+      <p>12. Write a JavaScript function that accepts a string as a parameter and find the longest word within the string.  .</p>
+    
+        <button class="btn" onclick="longestWord()">Open</button>
+       <p id="longestword"></p>
+       
+      
+      
+    </div>
+  </div>
+</div>
+
+<script>
+function longestWord(string) {
+    var str = string.split(" ");
+    var longest = 0;
+    var word = null;
+    for (var i = 0; i <= str.length - 1; i++) {
+        if (longest < str[i].length) {
+            longest = str[i].length;
+            word = str[i];
+        }
+    }
+    return word;
+}
+
+document.getElementById("longestword").innerHTML ="pride and prejudice <br>"+"The longest word is : "+ longestWord("pride and prejudice");
+
+        
+        
+
+      
+</script>
+
+</body>
+
+</html>
+

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS 2ND ASSIGNMENT FROM CHAPTER 21 TO 25</title>
+ <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+   <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<div class="jumbotron text-center">
+  <h1>JS 2ND ASSIGNMENT FROM CHAPTER 26 TO 30</h1>
+  <p>This assignment includes from chapter 26 to 30!</p> 
+</div>
+  
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <h3>TASK 4</h3>
+      <p>4. Write a program that simulates a dice using random() method of JS Math class. Display the value of dice in your browser.: </p>
+    
+        <button class="btn" onclick="MyFunction()">Open</button>
+       <p id="simulates"></p>
+      
+      
+    </div>
+  </div>
+</div>
+
+<script>
+function MyFunction(){
+  let num = prompt("Enter any digit for dice");
+    let dice = Math.random(num);
+    var value = Math.floor((dice * 6) + 1);
+        document.getElementById("simulates").innerHTML = " random dice value " + num + " is: " + value;
+      }
+</script>
+
+</body>
+
+</html>
+

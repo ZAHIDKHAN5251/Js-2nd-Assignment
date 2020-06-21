@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JS 2ND ASSIGNMENT FROM CHAPTER 21 TO 25</title>
+ <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+   <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<div class="jumbotron text-center">
+  <h1>JS 2ND ASSIGNMENT FROM CHAPTER 31 TO 34</h1>
+  <p>This assignment includes from chapter 31 to 34!</p> 
+</div>
+  
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <h3>TASK 5</h3>
+      <p> Write a function that squares its argument.    </p>
+    
+        <button class="btn" onclick="squar()">Open</button>
+       <p id="squares"></p>
+      
+      
+    </div>
+  </div>
+</div>
+
+<script>
+function squar(){
+        var num = prompt("Enter any num:");
+        var sqr = Math.pow(num,2)
+       
+          document.getElementById("squares").innerHTML = "The square of the number is  : " +sqr;
+        }
+   
+   
+   
+   
+      
+      
+</script>
+
+</body>
+
+</html>
+

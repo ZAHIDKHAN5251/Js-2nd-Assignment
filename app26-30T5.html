@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS 2ND ASSIGNMENT FROM CHAPTER 21 TO 25</title>
+ <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+   <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<div class="jumbotron text-center">
+  <h1>JS 2ND ASSIGNMENT FROM CHAPTER 26 TO 30</h1>
+  <p>This assignment includes from chapter 26 to 30!</p> 
+</div>
+  
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <h3>TASK 5</h3>
+      <p> 5. Write a program that simulates a coin toss using random() method of JS Math class. Display the value of coin in your browser</p>
+    
+        <button class="btn" onclick="MyFunction()">Open</button>
+       <p id="toss"></p>
+      
+      
+    </div>
+  </div>
+</div>
+
+<script>
+function MyFunction(){
+  let num = prompt("Enter any digit for toss");
+    let coin = Math.random(num);
+    var value = Math.floor((coin * 2) + 1);
+    if (value === 1) {
+      document.getElementById("toss").innerHTML = "random coin value tails: "+value;
+    }else{
+      document.getElementById("toss").innerHTML = "random coin value head: "+value;
+    }
+      }
+</script>
+
+</body>
+
+</html>
+

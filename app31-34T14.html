@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS 2ND ASSIGNMENT FROM CHAPTER 21 TO 25</title>
+ <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+   <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<div class="jumbotron text-center">
+  <h1>JS 2ND ASSIGNMENT FROM CHAPTER 31 TO 34</h1>
+  <p>This assignment includes from chapter 31 to 34!</p> 
+</div>
+  
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <h3>TASK 14</h3>
+      <p> 14. Write a program to generate your K-Electric bill in your browser. All the amounts should be rounded off to 2 decimal places. Display the following fields: a. Customer Name b. Current Month Page 5 of 5 
+ 
+c. Number of units d. Charges per unit e. Net Amount Payable (within Due Date) f. Late Payment Surcharge g. Gross Amount Payable (after Due Date) </p>
+    
+        <button class="btn" onclick="MyFunction()">Open</button>
+       <p id="K-Electric"></p>
+      
+      
+    </div>
+  </div>
+</div>
+
+<script>
+function MyFunction(){
+         var name = prompt("Enter your name:");
+         var Month = prompt("Enter Month:");
+         var unit = prompt("Enter number of units:");
+         var perunit = 16;
+         var latePayment = 350;
+         var netAmountDueDate = unit * perunit;
+         var PaymentAterDate = netAmountDueDate + latePayment;
+        
+   document.getElementById("K-Electric").innerHTML = "<br>Customer name : "+name+ "<br>Month : " +Month+ "<br>No of units : " +unit+ "<br>charges per unit: "+perunit+ "<br><br>Net ammount payable (within due Date ): " +netAmountDueDate+ "<br>Late Payment charges: "+latePayment+ "<br>Gross ammount payable(after due Date): "+PaymentAterDate+ "\n <h1>thanks for Payment</h1>";
+      
+      }
+</script>
+
+</body>
+
+</html>
+

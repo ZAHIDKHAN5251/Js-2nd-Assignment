@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JS 2ND ASSIGNMENT FROM CHAPTER 21 TO 25</title>
+ <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+   <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<div class="jumbotron text-center">
+  <h1>JS 2ND ASSIGNMENT FROM CHAPTER 34 TO 38</h1>
+  <p>This assignment includes from chapter 34 to 38!</p> 
+</div>
+  
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <h3>TASK 13</h3>
+      <p>13. Write a JavaScript function that accepts two arguments, a string and a letter and the function will count the number of .</p>
+    
+        <button class="btn" onclick="count()">Enter value in box</button>
+       <p id="longestword"></p>
+        </div>
+   <div col-sm-4>
+     <span style="color: green; font-size: 20px"> Enter radius value:</span>
+    <input type="text" id="radius"> <br><br>
+    <button class="btn" type="button" id="area"> Area </button>
+    <button class="btn" type="button" id="circumference"> Circumference </button> <br><br><br><span style="color: green; font-size: 20px"> Result:</span>
+    <input type="text" id="result">
+  </div>  
+   
+  </div>
+</div>
+
+<script>
+   $(document).ready(function() {
+      //Area
+      $("#area").click(function() {
+        var a = $("#radius").val();
+        $("#result").val((22 / 7) * (+a) * (+a));
+      });
+      //Circumference
+      $("#circumference").click(function() {
+        var a = $("#radius").val();
+        $("#result").val((2) * (22 / 7) * (+a));
+      });
+    });
+      
+</script>
+
+</body>
+
+</html>
+

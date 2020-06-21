@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JS 2ND ASSIGNMENT FROM CHAPTER 21 TO 25</title>
+ <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+   <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<div class="jumbotron text-center">
+  <h1>JS 2ND ASSIGNMENT FROM CHAPTER 31 TO 34</h1>
+  <p>This assignment includes from chapter 31 to 34!</p> 
+</div>
+  
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <h3>TASK 4</h3>
+      <p> 4. <h2>Calculator</h2>:  Write a function that takes three arguments num1, num2 & operator & compute the desired operation. Return and show the desired result in your browser.   </p>
+    
+        <button class="btn" onclick="MyFunction()">Open</button>
+       <p id="Calculator"></p>
+      
+      
+    </div>
+  </div>
+</div>
+
+<script>
+function MyFunction(){
+        var num1 = prompt("Enter first num:");
+        var num2 = prompt("Enter second num:");
+        var opr = prompt("Enter any operator +, -, *, /, % ");
+        var sum = parseInt(num1) + parseInt(num2);
+        var mul = parseInt(num1) * parseInt(num2);
+        var sub = parseInt(num1) - parseInt(num2);
+        var divis = parseInt(num1) / parseInt(num2);
+        var mod =parseInt(num1) % parseInt(num2);
+        if(opr == "+"){
+          document.getElementById("Calculator").innerHTML = "The sum of tow numbers is  : "+ sum;
+        }else if(opr == "-"){
+          document.getElementById("Calculator").innerHTML = "The subtraction of tow numbers is  : "+sub;
+        }else if(opr == "*"){
+          document.getElementById("Calculator").innerHTML = "The multiplication of tow numbers is  : "+mul;
+        }else if(opr == "/"){
+          document.getElementById("Calculator").innerHTML = "The division of tow numbers is  : "+divis;
+        }else if(opr == "%"){
+          document.getElementById("Calculator").innerHTML = "The modulus of tow numbers is  : "+mod;
+        }else{
+          document.getElementById("Calculator").innerHTML = "you have entered wrong operator  : ";
+        }
+   
+   
+   
+   
+      
+      }
+</script>
+
+</body>
+
+</html>
+
